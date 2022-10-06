@@ -1,7 +1,7 @@
 ﻿using AddressBook;
 
 var menuManager = new MenuManager();
-menuManager.Run();
+menuManager.Run(); 
 
 Console.ReadKey();
 
