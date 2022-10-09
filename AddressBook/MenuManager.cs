@@ -139,15 +139,17 @@ namespace AddressBook
                 contact.City = city;
             // här kommer kontakten uppdateras och sparas
         }
-        // om anvädaren väljer detta alternativ så kan en kontakt uppdateras.
+        // om anvädaren väljer detta alternativ så behöver användaren ange en kontakts Id och sedan kan den uppdateras.
 
         public void DeleteContact(Guid id)
         {
+            Console.Clear();
             Console.Write("Enter contact id to delete: ");
             var option = Console.ReadLine();
             contacts = contacts.Where(x => x.Id != id).ToList();
+            Console.Write("Your contact is deleted");
         }
-        //här kan användaren välja en kontakt som kan raderas.
+        //här ska användare ange en konatakts Id och sedan raderas den kontakten.
 
         public void Run()
         {
