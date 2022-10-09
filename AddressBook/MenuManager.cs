@@ -34,6 +34,8 @@ namespace AddressBook
             {
                 Console.WriteLine($"{contact.Id} - {contact.FirstName} {contact.LastName}, {contact.StreetName} {contact.PostalCode} {contact.City}");
             }
+
+
         }
         // den här metoden visar användaren alla kontakter som finns i adressboken.
          
